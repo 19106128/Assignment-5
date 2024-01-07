@@ -1,2 +1,62 @@
 
 1.{"name":"Thirukumaran","Degree":"ECE","language":["tamil"," english"],"city":"chennai","skills":["javascript","html","CSS"],"year":2023}
+ 
+2. JSON ITERATE USING FOR LOOP
+ 
+let keys=['thiru','kumar','santhosh','subash','dinesh']
+let values=[1,2,3,4,5]
+let person={}
+for(let i=0; i<keys.length;i++)
+{
+    person[keys[i]]=values[i]
+}
+console.log(person);
+output=>{thiru: 1, kumar: 2, santhosh: 3, subash: 4, dinesh: 5}
+         thiru:1
+         kumaran:2
+         santhosh:3
+         subash:4
+        dinesh:5
+
+JSON ITERATE USING FOR IN
+
+const data={
+    name:'thiru',
+    age :21,
+    sex :'male'
+}
+for(let keys in data)
+{
+ console.log(keys+":" ,data[keys])
+}
+output name: thiru
+       age: 21
+        sex: male
+
+JSON ITERATE USING FOREACH
+
+let fav=['video','book','java','year'];
+let items=['play','reader','script',2000];
+let solution={}
+fav.forEach((fav,i)=>{
+    solution[fav]=items[i]
+});
+ console.log(solution);
+output=>{video: 'play', book: 'reader', java: 'script', year: 2000}//book: "reader
+java: "script"
+video: "play"
+year: 2000
+
+JSON ITERAITON USING FOR OF
+
+let cars={'ford':1,'toyota':2,'honda':3,'volkswagen':'fav'}
+let k= Object.keys(cars)
+for(let i of k)
+{
+    console.log(`${i} : ${cars[i]}`);
+}
+output=>ford : 1
+        toyota : 2
+        honda : 3
+        volkswagen : fav
+}
